@@ -12,7 +12,6 @@ private node add_sym_sample {
     this.add_sample(-angle * units.deg, lift * units.thou)
 }
 
-public node stock_454_intake_lobe_profile {
     alias output __out:
         harmonic_cam_lobe(
             duration_at_50_thou: 194 * units.deg,
@@ -31,8 +30,6 @@ public node stock_454_exhaust_lobe_profile {
             steps: 100
         );
 }
-
-public node comp_cams_magnum_11_450_8_lobe_profile {
     alias output __out:
         harmonic_cam_lobe(
             duration_at_50_thou: 232 * units.deg,
@@ -44,7 +41,6 @@ public node comp_cams_magnum_11_450_8_lobe_profile {
 
 public node comp_cams_magnum_11_470_8_lobe_profile {
     alias output __out:
-        harmonic_cam_lobe(
             duration_at_50_thou: 252 * units.deg,
             gamma: 0.8,
             lift: 612 * units.thou,
